@@ -33,9 +33,9 @@ function App() {
     fetchData();
   }, []);
 
-  if (isLoading) {
-    return <Loader></Loader>;
-  }
+  // if (isLoading) {
+  //   return <Loader></Loader>;
+  // }
 
   return (
     <div className="App">
