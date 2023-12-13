@@ -17,7 +17,7 @@ export const CTA = () => {
             <Button bg="dark">Download App</Button>
           </div>
           <div className="cta-image">
-            <img src="/CTA2.png" alt="Call To Action Image" />
+            <img src="/CTA2.png" alt="Call_To_Action_Image" />
           </div>
         </div>
       </Container>

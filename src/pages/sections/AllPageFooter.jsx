@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container } from "../../components/Layouts";
 import {
   faFacebook,
   faInstagram,
@@ -17,19 +15,19 @@ export const AllPageFooter = () => {
       <hr />
       <div className="socials">
         <div className="logo">
-          <img src="/logos/logo-primary.png" />
+          <img src="/logos/logo-primary.png" alt="logo"/>
         </div>
         <div>
-          <a href="#">
+          <a href="https://www.facebook.com/">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>

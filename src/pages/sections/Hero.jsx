@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonSmall } from "../../components/Buttons";
 import { Container } from "../../components/Layouts";
 
 export const Hero = () => {
@@ -13,7 +12,7 @@ export const Hero = () => {
           with every dollar.
         </p>
         <div className="blob"></div>
-        <img src="/HeroImage.png" alt="Hero Image" />
+        <img src="/HeroImage.png" alt="Hero_Image" />
       </Container>
     </HERO>
   );

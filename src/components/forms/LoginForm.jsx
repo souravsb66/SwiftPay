@@ -49,7 +49,7 @@ export const LoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <div className="login-btn-div">
-          <button type="submit" data-testid="user-login" onClick={handleSubmit}>
+          <button type="submit" data-testid="user-login" disabled={!email || !password} onClick={handleSubmit}>
             Log In
           </button>
         </div>

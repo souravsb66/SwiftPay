@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useToast } from "../custom/ToastProvider";
 import { useDispatch, useSelector } from "react-redux";
-import { updateUser } from "../../redux/user/usersReducer/action";
+// import { updateUser } from "../../redux/user/usersReducer/action";
 
 const BuySwiftCoinsFormContainer = styled.div`
   padding: 0 1rem;

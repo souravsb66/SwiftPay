@@ -1,4 +1,4 @@
-import { GET_DATA, LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCESS } from "./actionType";
+import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCESS } from "./actionType";
 const initState = {
   isLoading: false,
   isError: false,

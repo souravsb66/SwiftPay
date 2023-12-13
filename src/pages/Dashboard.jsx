@@ -166,7 +166,7 @@ export const Dashboard = () => {
   };
 
   const [selectedTab, setSelectedTab] = useState("overview");
-  const isAuth = useSelector((store) => store.authReducer.isAuth);
+  // const isAuth = useSelector((store) => store.authReducer.isAuth);
   const [noti, setNotif] = useState(false);
 
   const handleTabClick = (tab) => {

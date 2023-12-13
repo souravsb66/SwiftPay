@@ -4,7 +4,7 @@ import { AllRoutes } from "./routes/AllRoutes";
 import { getUsers } from "./redux/user/usersReducer/action";
 import { useDispatch, useSelector } from "react-redux";
 
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { alreadyLoggedIn } from "./redux/authReducer/action";
 import Loader from "./components/Loader";
 import { useToast } from "./components/custom/ToastProvider";
@@ -33,9 +33,9 @@ function App() {
     fetchData();
   }, []);
 
-  // if (isLoading) {
-  //   return <Loader></Loader>;
-  // }
+  if (isLoading) {
+    return <Loader></Loader>;
+  }
 
   return (
     <div className="App">

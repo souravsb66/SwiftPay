@@ -7,7 +7,7 @@ import { reducer as usersReducer } from "./user/usersReducer/reducer";
 import { reducer as accountReducer } from "./user/accountReducer/reducer";
 import thunk from "redux-thunk";
 
-export const baseURL = `https://warlike-current.onrender.com`;
+export const baseURL = process.env.REACT_APP_BASE_URL;
 // export const baseURL = "https://swiftpay-server.cyclic.app";
 
 const rootReducer = combineReducers({
