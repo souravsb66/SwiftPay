@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React, { useEffect } from "react";
 import { AllRoutes } from "./routes/AllRoutes";
@@ -17,7 +16,7 @@ function App() {
   const users = useSelector((store) => store.usersReducer.users);
   const [isLoading, setIsLoading] = React.useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       await dispatch(getUsers(showToast));
       const id = JSON.parse(localStorage.getItem("id"));
