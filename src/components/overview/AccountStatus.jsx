@@ -12,7 +12,7 @@ const AccountStatus = ({ flag }) => {
         loop: true,
         autoplay: true,
         animationData:
-          flag == "happy"
+          flag === "happy"
             ? require("../../animations/happy_face.json")
             : require("../../animations/sad_face.json"),
       });
@@ -41,7 +41,7 @@ const AccountStatus = ({ flag }) => {
           fontWeight: 400,
         }}
       >
-        {flag == "happy"
+        {flag === "happy"
           ? "Hurray! Your Income is more than your Expenses"
           : "Your Monthly Expenses exceeded your Income!"}
       </h5>

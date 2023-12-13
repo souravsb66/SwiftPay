@@ -12,7 +12,7 @@ export const Instructions = () => {
           illum facere debitis dolorum ducimus corporis ipsam exercitationem.
         </p>
         <div className="instructions-details">
-          <img src="/creditcards.png" alt="Credit Card Image" />
+          <img src="/creditcards.png" alt="Credit_Card_Image" />
           <div>
             <div>
               <span>01.</span>

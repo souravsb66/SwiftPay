@@ -5,13 +5,10 @@ import { reducer as subscriptionsReducer } from "./admin/subscriptionsReducer/re
 import { reducer as supportReducer } from "./admin/SupportReducer/reducer";
 import { reducer as usersReducer } from "./user/usersReducer/reducer";
 import { reducer as accountReducer } from "./user/accountReducer/reducer";
-// import { reducer as userQueryReducer } from "./user/userQuery/reducer";
 import thunk from "redux-thunk";
 
-export const baseURL = `https://warlike-current.onrender.com`;
-
-// export const baseURL = `http://localhost:8080`;
-//checking;
+export const baseURL = process.env.REACT_APP_BASE_URL;
+// export const baseURL = "https://swiftpay-server.cyclic.app";
 
 const rootReducer = combineReducers({
   authReducer,
@@ -20,7 +17,6 @@ const rootReducer = combineReducers({
   supportReducer,
   accountReducer,
   usersReducer,
-  // userQueryReducer
 });
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));

@@ -1,13 +1,24 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { LoginForm } from "../components/forms/LoginForm";
 import { SignUpForm } from "../components/forms/SignUpForm";
 import { HomeNav } from "./sections/HomeNav";
 import { HomeFooter } from "./sections/HomeFooter";
+import { Button } from "../components/Buttons";
+import { useToast } from "../components/custom/ToastProvider";
+import { login } from "../redux/authReducer/action";
 
 export const AuthPage = () => {
+
   const [isLoginVisible, setIsLoginVisible] = useState(true);
   const [isSignUpVisible, setIsSignUpVisible] = useState(false);
+
+  const users = useSelector((store) => store.usersReducer.users);
+  const showToast = useToast();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const showLogin = () => {
     setIsLoginVisible(true);
@@ -18,6 +29,16 @@ export const AuthPage = () => {
     setIsLoginVisible(false);
     setIsSignUpVisible(true);
   };
+
+  const handleGuestLogin = () => {
+    const user = {
+      email: process.env.REACT_APP_GUEST_EMAIL,
+      password: process.env.REACT_APP_GUEST_PASSWORD
+    };
+
+    console.log(user);
+    dispatch(login(user, showToast, users, navigate));
+  }
 
   return (
     <>
@@ -80,6 +101,7 @@ export const AuthPage = () => {
             {isSignUpVisible && <SignUpForm />}
           </div>
         </div>
+        <Button children={"Guest Login"} onClick={handleGuestLogin} />
       </DIV>
       <HomeFooter></HomeFooter>
     </>

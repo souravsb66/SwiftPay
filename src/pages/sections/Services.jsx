@@ -19,7 +19,7 @@ export const Services = () => {
             <Button onClick={() => navigate("/login")}>Create A Plan</Button>
           </div>
           <div className="subsection-image">
-            <img src="/Phone1.png" />
+            <img src="/Phone1.png" alt="Phone1"/>
             <div className="subsection-banner">
               <img src="/Dribbble.svg" alt="Dribbble Icon" />
               <div>
@@ -35,7 +35,7 @@ export const Services = () => {
         </div>
         <div className="subsection">
           <div className="subsection-image">
-            <img src="/Phone2.png" />
+            <img src="/Phone2.png" alt="Phone2"/>
             <div className="subsection-banner">
               <img src="/spotify.svg" alt="Spotify Icon" />
               <div>

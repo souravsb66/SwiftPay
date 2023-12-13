@@ -11,7 +11,7 @@ export const login = (user, showToast, users, navigate) => (dispatch) => {
   let flag = false;
   let loggedInUser;
 
-  if (user.email === "admin@admin.com" && user.password == "admin@admin") {
+  if (user.email === "admin@admin.com" && user.password === "admin@admin") {
     dispatch({ type: POSTADMINSUCESS });
     showToast("success", "Admin Login Successful");
     navigate("/admin");

@@ -95,7 +95,7 @@ export const reducer = (state = initState, { type, payload }) => {
       return {
         isError: false,
         isLoading: false,
-        subscriptions: state.subscriptions.map((ele) => ele.id == payload.id ? payload : ele)
+        subscriptions: state.subscriptions.map((ele) => ele.id === payload.id ? payload : ele)
       }
     default:
       return state;

@@ -25,7 +25,7 @@ export const HomeFooter = ({ children }) => {
       <Container>
         <nav>
           <div className="logo">
-            <img src="/logos/logo-primary.png" />
+            <img src="/logos/logo-primary.png" alt="logo" />
           </div>
           <ul>
             <li>
@@ -58,16 +58,16 @@ export const HomeFooter = ({ children }) => {
         <hr />
         <div className="socials">
           <div>
-            <a href="#">
+            <a href="https://www.facebook.com/">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
