@@ -52,6 +52,14 @@ To run the application go to the client folder and run the following command:
 npm start
 ```
 
+
+## :warning: Disclaimer
+
+**Please note:** The server side for this project is deployed on Render.com, and since we're using the free tier, the server is shut down after 15 minutes of no use, and whenever you're using the live link for the first time, it takes a few seconds to restart the server, so kindly wait a few seconds when you open the live link for the first time. 
+
+> This software is experimental and under development.
+
+
 ## Tools used on this project
 - Visual Studio Code
 - create-react-app template
