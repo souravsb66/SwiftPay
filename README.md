@@ -60,20 +60,25 @@ npm start
 ## User Side -
 
 
-Dashbboard Page
+Dashboard Page
+
 ![Dashboard](./src/assets/screens/Dashboard.png)
 
-Payment Page
-![Dashboard](./src/assets/screens/Payment.png)
+Payments Page
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
+![Payments](./src/assets/screens/Payment.png)
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
+Sending Money
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
+![Send_Money](./src/assets/screens/Send_Money.png)
+
+Trasactions & Notifications
+
+![Trasactions_&_Notifications](./src/assets/screens/Trasactions_&_Notifications.png)
+
+Subscriptions Page
+
+![Subscriptions](./src/assets/screens/Subscriptions.png)
 
 Dashbboard Page
 ![Dashboard](./src/assets/screens/Dashboard.png)
