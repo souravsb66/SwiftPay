@@ -52,10 +52,44 @@ To run the application got to the client folder and run the following command:
 npm start
 ```
 
-
 ## Tools used on this project
 - Visual Studio Code
 - create-react-app template
+
+## Screens
+## User Side -
+
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Payment Page
+![Dashboard](./src/assets/screens/Payment.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
+Dashbboard Page
+![Dashboard](./src/assets/screens/Dashboard.png)
+
 ## Show your support
 
 If you appreciate this project, show your support with a ⭐!
