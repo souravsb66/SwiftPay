@@ -11,7 +11,6 @@ import { useToast } from "../components/custom/ToastProvider";
 import { login } from "../redux/authReducer/action";
 
 export const AuthPage = () => {
-
   const [isLoginVisible, setIsLoginVisible] = useState(true);
   const [isSignUpVisible, setIsSignUpVisible] = useState(false);
 
@@ -33,17 +32,18 @@ export const AuthPage = () => {
   const handleGuestLogin = () => {
     const user = {
       email: process.env.REACT_APP_GUEST_EMAIL,
-      password: process.env.REACT_APP_GUEST_PASSWORD
+      password: process.env.REACT_APP_GUEST_PASSWORD,
     };
 
     console.log(user);
     dispatch(login(user, showToast, users, navigate));
-  }
+  };
 
   return (
     <>
-      <HomeNav></HomeNav>
-      <DIV log={isLoginVisible}>
+      <HomeNav />
+      {/* <DIV log={isLoginVisible}> */}
+      <DIV>
         {isSignUpVisible && (
           <h5
             style={{
@@ -110,6 +110,7 @@ export const AuthPage = () => {
 
 const DIV = styled.div`
   /* min-height: ; */
+
   padding: 20px;
   margin: auto;
   display: flex;
@@ -157,15 +158,23 @@ const DIV = styled.div`
       /* font-size:var(--button); */
     }
     input {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-grey);
-    background-color: transparent;
-    color: var(--primary-white);
-    border-radius: 0.25rem;
-    &:focus {
-      outline-color: var(--primary-light);
+      width: 100%;
+      /* padding: 0.5rem 1rem; */
+      border: 1px solid var(--primary-grey);
+      background-color: transparent;
+      color: var(--primary-white);
+      border-radius: 0.25rem;
+      &:focus {
+        outline-color: var(--primary-light);
+      }
     }
   }
+
+  @media screen and (min-width: 481px) and (max-width: 650px) {
+      width: 25rem;
+  }
+
+  @media screen and (max-width: 480px) {
+      width: 22rem;
   }
 `;

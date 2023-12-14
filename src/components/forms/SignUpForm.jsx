@@ -154,6 +154,14 @@ const Container = styled.div`
     width: 100%;
     /* background: red; */
   }
+
+  @media screen and (min-width: 481px) and (max-width: 650px) {
+      width: 22rem;
+  }
+
+  @media screen and (max-width: 480px) {
+      width: 18rem;
+  }
 `;
 
 const FormGroup = styled.div`
