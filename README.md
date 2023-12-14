@@ -11,13 +11,13 @@ Swiftpay is a dynamic and user-friendly finance website that revolutionizes the 
 
 ## 🚀 Features
 
-- Account creation, login, signup and logout functionality.
+- Account creation, login, signup, and logout functionality.
 - Facility to change user details and authentication.
 - Subscription
 - Payment
 - Transaction
 - Notification
-- Sort, filter,search
+- Sort, filter, search
 - Admin Side
 
 
@@ -43,11 +43,11 @@ To confirm that you have npm installed you can run this command in your terminal
 ```bash
 npm -v
 ```
-To install all the dependences of the project, run the following command:
+To install all the dependencies of the project, run the following command:
 ```bash
 npm install
 ```
-To run the application got to the client folder and run the following command:
+To run the application go to the client folder and run the following command:
 ```bash
 npm start
 ```
@@ -64,36 +64,62 @@ Dashboard Page
 
 ![Dashboard](./src/assets/screens/Dashboard.png)
 
+
 Payments Page
 
 ![Payments](./src/assets/screens/Payment.png)
+
 
 Sending Money
 
 ![Send_Money](./src/assets/screens/Send_Money.png)
 
+
 Trasactions & Notifications
 
 ![Trasactions_&_Notifications](./src/assets/screens/Trasactions_&_Notifications.png)
+
 
 Subscriptions Page
 
 ![Subscriptions](./src/assets/screens/Subscriptions.png)
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
+Buy Subscription
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
+![Buy_Subscription](./src/assets/screens/Buy_Subscription.png)
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
 
-Dashbboard Page
-![Dashboard](./src/assets/screens/Dashboard.png)
+User Profile
+
+![Profile](./src/assets/screens/Profile.png)
+
+
+Edit Profile
+
+![Edit_Profile](./src/assets/screens/Edit_Profile.png)
+
+## Admin Side
+
+All Users Page
+
+![All_Users](./src/assets/screens/Admin-Users.png)
+
+
+All Transactions Page
+
+![All_Transactions](./src/assets/screens/Admin-Trasactions.png)
+
+
+Admin Tickets Page
+
+![Admin-Tickets](./src/assets/screens/Admin-Tickets.png)
+
+
+Admin Subscriptions Page
+
+![Admin-Subscriptions](./src/assets/screens/Admin-Subscriptions.png)
+
 
 ## Show your support
 
