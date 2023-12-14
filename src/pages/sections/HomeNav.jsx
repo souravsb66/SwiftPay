@@ -232,7 +232,7 @@ const Sidebar = styled.div`
   background-color: var(--background-light);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1rem;
   z-index: 10000;
 
@@ -256,7 +256,6 @@ const Sidebar = styled.div`
   }
 
   button {
-    margin-top: auto;
     width: 60%;
     margin-inline: auto;
   }

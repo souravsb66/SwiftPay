@@ -8,7 +8,6 @@ import { reducer as accountReducer } from "./user/accountReducer/reducer";
 import thunk from "redux-thunk";
 
 export const baseURL = process.env.REACT_APP_BASE_URL;
-// export const baseURL = "https://swiftpay-server.cyclic.app";
 
 const rootReducer = combineReducers({
   authReducer,
@@ -20,4 +19,3 @@ const rootReducer = combineReducers({
 });
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));
-// Checking

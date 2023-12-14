@@ -141,6 +141,7 @@ export const Overview = () => {
           </motion.div>
         </div>
       </DETAILSCARDS>
+
       <ACCOUNTSTATUS>
         <motion.div
           className="transaction-card"
@@ -161,6 +162,7 @@ export const Overview = () => {
           </CardSmall>
         </motion.div>
       </ACCOUNTSTATUS>
+
       <SUBSCRIPTIONSOVERVIEW>
         <motion.div
           className="transaction-card"
@@ -215,7 +217,8 @@ export const Overview = () => {
           </CardSmall>
         </motion.div>
       </SUBSCRIPTIONSOVERVIEW>
-      <OverviewCharts></OverviewCharts>
+
+      <OverviewCharts />
     </OVERVIEW>
   );
 };
@@ -240,11 +243,26 @@ const OVERVIEW = styled.main`
       "charts charts charts charts"
       "subsoverview subsoverview subsoverview subsoverview";
   }
-  @media screen and (max-width:900px){
+  @media screen and (max-width: 900px) {
     grid-template-areas:
-    "account-status account-status account-status account-status"
-    "detailscards detailscards detailscards detailscards"
-    "charts charts charts charts"
+      "account-status account-status account-status account-status"
+      "detailscards detailscards detailscards detailscards"
+      "charts charts charts charts"
+      "subsoverview subsoverview subsoverview subsoverview";
+  }
+  @media screen and (min-width: 481px) and (max-width: 650px) {
+    grid-template-areas:
+      "account-status account-status account-status account-status"
+      "detailscards detailscards detailscards detailscards"
+      "charts charts charts charts"
+      "subsoverview subsoverview subsoverview subsoverview";
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-areas:
+      "account-status account-status account-status account-status"
+      "detailscards detailscards detailscards detailscards"
+      "charts charts charts charts"
       "subsoverview subsoverview subsoverview subsoverview";
   }
 `;
@@ -274,6 +292,16 @@ const DETAILSCARDS = styled.div`
     @media screen and (max-width: 1300px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
     }
   }
   .card-heading {
@@ -309,12 +337,12 @@ const DETAILSCARDS = styled.div`
   }
   @media screen and (max-width: 860px) {
     .card-heading > *:first-child {
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    border: 3px solid var(--primary);
-    padding: 0.75rem;
-    border-top-color: transparent;
-  }
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      border: 3px solid var(--primary);
+      padding: 0.75rem;
+      border-top-color: transparent;
+    }
   }
 `;
 

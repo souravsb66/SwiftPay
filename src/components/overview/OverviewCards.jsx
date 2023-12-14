@@ -58,7 +58,7 @@ const CARDLARGE = styled.div`
   }
   @media screen and (max-width: 650px) {
   min-width: 200px;
-  padding: 0.75em 1.5em;
+  padding: 0.75em 1em;
   border-radius: 1.25em;
  }
 `;

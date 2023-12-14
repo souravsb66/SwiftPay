@@ -67,4 +67,12 @@ const FORM = styled.form `
   button {
     width: 30%;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 650px) {
+      width: 22rem;
+  }
+
+  @media screen and (max-width: 480px) {
+      width: 18rem;
+  }
 `

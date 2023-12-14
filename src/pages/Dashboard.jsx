@@ -93,8 +93,7 @@ const Tabs = styled.div`
     gap: 0.5rem;
   }
   @media screen and (max-width: 650px) {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     gap: 0.5rem;
   }
 `;
@@ -114,8 +113,30 @@ const Tab = styled.button`
     background: var(--primary);
     color: var(--text-button);
   }
+
+  .tab-icon {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+
   @media screen and (max-width: 850px) {
     padding: 0.25rem 0.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tab-title {
+      display: none;
+    }
+    .tab-icon {
+      margin: 0;
+    }
   }
 `;
 
@@ -224,54 +245,46 @@ export const Dashboard = () => {
               selected={selectedTab === "overview"}
               onClick={() => handleTabClick("overview")}
             >
-              Overview
+              <span className="tab-title">Overview</span>
               <FontAwesomeIcon
+                className="tab-icon"
                 icon={faChartSimple}
-                style={{
-                  marginLeft: "0.5em",
-                  fontSize: "1rem",
-                }}
               ></FontAwesomeIcon>
             </Tab>
+            
             <Tab
               selected={selectedTab === "payments"}
               onClick={() => handleTabClick("payments")}
             >
-              Payments
+              <span className="tab-title">Payments</span>
               <FontAwesomeIcon
+                className="tab-icon"
                 icon={faCreditCard}
-                style={{
-                  marginLeft: "0.5em",
-                  fontSize: "1rem",
-                }}
               ></FontAwesomeIcon>
             </Tab>
+
             <Tab
               selected={selectedTab === "subscriptions"}
               onClick={() => handleTabClick("subscriptions")}
             >
-              Subscriptions
+              <span className="tab-title">Subscriptions</span>
               <FontAwesomeIcon
+                className="tab-icon"
                 icon={faTv}
-                style={{
-                  marginLeft: "0.5em",
-                  fontSize: "1rem",
-                }}
               ></FontAwesomeIcon>
             </Tab>
+
             <Tab
               selected={selectedTab === "transactions"}
               onClick={() => handleTabClick("transactions")}
             >
-              Transactions
+              <span className="tab-title">Transactions</span>
               <FontAwesomeIcon
+                className="tab-icon"
                 icon={faClockRotateLeft}
-                style={{
-                  marginLeft: "0.5em",
-                  fontSize: "1rem",
-                }}
               ></FontAwesomeIcon>
             </Tab>
+
           </Tabs>
         </div>
         <div className="user-profile">

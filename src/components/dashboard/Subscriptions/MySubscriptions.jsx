@@ -31,4 +31,10 @@ const DIV = styled.div`
     transform: scale(1.001);
     border: 1px solid var(--primary-grey);
   }
+
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
 `;

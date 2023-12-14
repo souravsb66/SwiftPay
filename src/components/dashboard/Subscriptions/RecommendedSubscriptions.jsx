@@ -32,7 +32,6 @@ export const RecommendedSubscriptions = ({
               {...ele}
               children={
                 <div className="recommendedSubscriptions-card-buttons-div">
-                  
                   <ButtonOutline
                     children={"View Details"}
                     onClick={() => {
@@ -64,5 +63,11 @@ const DIV = styled.div`
     transform: scale(1.02);
     transition: 1sec;
     border: 1px solid var(--primary-grey);
+  }
+
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
   }
 `;

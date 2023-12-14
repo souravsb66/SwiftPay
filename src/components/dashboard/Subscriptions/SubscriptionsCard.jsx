@@ -37,7 +37,11 @@ export const SubscriptionsCard = ({
           <h5>{type}</h5>
           {/* <p>{description}</p> */}
           <p className="subscription-card-price">$ {amount}</p>
-          {!children ? <p style={{color:'var(--primary-grey)'}}>Billed: {billing_cycle}</p> : null}
+          {!children ? (
+            <p style={{ color: "var(--primary-grey)" }}>
+              Billed: {billing_cycle}
+            </p>
+          ) : null}
         </div>
         <div className="subscriptions-card-buttons-div">
           {/* <ButtonSmall children={"Cancel"} onClick={handleCancel} /> */}
@@ -73,17 +77,17 @@ const CARDDIV = styled.div`
     justify-content: space-evenly;
     padding: 10px;
     color: var(--primary-white);
-    h5{
-      font-size:large;
-      margin-bottom:0.25rem
+    h5 {
+      font-size: large;
+      margin-bottom: 0.25rem;
     }
-    h5:last-of-type{
-      color:var(--primary-grey);
-      font-size:var(--link);
-      text-transform:uppercase;
-      letter-spacing:1px;
-      font-weight:400;
-      margin-bottom:0.5rem;
+    h5:last-of-type {
+      color: var(--primary-grey);
+      font-size: var(--link);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
     }
   }
   .subscriptions-card-buttons-div > button {
@@ -100,16 +104,48 @@ const CARDDIV = styled.div`
   }
   .recommendedSubscriptions-card-buttons-div > button {
     margin-bottom: 5px;
+
+    @media screen and (max-width: 480px) {
+      width: fit-content;
+      padding: 0.3rem 0.6rem;
+    }
   }
-  @media screen and (max-width:650px){
-    width:200px;
+
+  @media screen and (max-width: 650px) {
+    width: 200px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    min-width: 180px;
+    border-radius: 0.6rem;
+    border: 1px solid var(--primary-grey);
+
+    .subscriptions-card-details-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 6px;
+      color: var(--primary-white);
+      h5 {
+        font-size: medium;
+        margin-bottom: 0.25rem;
+      }
+      h5:last-of-type {
+        color: var(--primary-grey);
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 `;
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
-    borderRadius: '1rem',
+    borderRadius: "1rem",
     opacity: 1,
     y: 0,
     transition: {
@@ -119,7 +155,7 @@ const cardVariants = {
   },
   hover: {
     scale: 1.01,
-    boxShadow: '0px 0px 10px rgba(255, 255, 255, 0.3)',
+    boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.3)",
     transition: {
       duration: 0.2,
     },
