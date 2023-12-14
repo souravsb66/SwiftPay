@@ -114,7 +114,7 @@ const CARDDIV = styled.div`
   @media screen and (max-width: 650px) {
     width: 200px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     width: 100%;
     min-width: 180px;
     border-radius: 0.6rem;
@@ -139,6 +139,9 @@ const CARDDIV = styled.div`
         margin-bottom: 0.5rem;
       }
     }
+  }
+  @media screen and (max-width: 500px) {
+    width: 200px;
   }
 `;
 

@@ -86,7 +86,7 @@ const DIV = styled.div`
   gap: 50px;
   /* justify-content: space-evenly; */
   text-align: left;
-  padding: 10px;
+  /* padding: 10px; */
 `;
 
 const H4 = styled.h3`

@@ -65,9 +65,15 @@ const DIV = styled.div`
     border: 1px solid var(--primary-grey);
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 401px) and (max-width: 500px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
+  }
+  @media screen and (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 `;
