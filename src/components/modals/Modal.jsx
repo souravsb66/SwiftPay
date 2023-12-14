@@ -26,6 +26,11 @@ const ModalContainer = styled.dialog`
   min-width:20rem;
   border-radius: 2rem;
   border:none;
+
+  
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const CloseButton = styled.button`

@@ -41,6 +41,10 @@ const CALLTOACTION = styled.section`
     align-items: center;
     justify-content: space-between;
     max-height: 25rem;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
   }
 
   .cta .cta-content {
@@ -67,6 +71,10 @@ const CALLTOACTION = styled.section`
     bottom: 0;
     right: 10%;
     /* width:70%; */
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
   @media screen and (max-width: 940px) {
     .cta .cta-content {
@@ -108,4 +116,5 @@ const CALLTOACTION = styled.section`
       /* width:70%; */
     }
   }
+  
 `;

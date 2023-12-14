@@ -192,6 +192,10 @@ const DIV = styled.div`
       width: 25%;
       border-radius: 50%;
       border: 2px solid var(--primary-light);
+
+      @media screen and (max-width: 480px) {
+        width: 22%;
+      }
     }
 
     > div {
@@ -209,6 +213,10 @@ const DIV = styled.div`
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: var(--link);
+        
+        @media screen and (max-width: 480px) {
+          font-size: 0.7rem;
+        }
         span {
           color: var(--primary-light);
         }
@@ -248,5 +256,18 @@ const DIV = styled.div`
   }
   .edit-form .buttons {
     align-self: flex-end;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0.5rem;
+    .main-div {
+      width: 20rem;
+    }
+    .edit-form {
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
