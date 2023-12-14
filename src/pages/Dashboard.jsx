@@ -115,7 +115,7 @@ const Tab = styled.button`
   }
 
   .tab-icon {
-    margin-left: "0.5em";
+    margin-left: 0.5rem;
     font-size: 1rem;
   }
 

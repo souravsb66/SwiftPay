@@ -161,6 +161,7 @@ export const Payments = () => {
             <span>Buy SwiftCoin</span>
           </motion.div>
         </PAYMENTTABS>
+
         <DETAILSCARDS>
           <div>
             <motion.div
@@ -254,6 +255,7 @@ export const Payments = () => {
           </motion.div>
         </TRANSACTIONSSUMMARY>
         <hr />
+
         <REMAINDERS>
           <motion.div
             variants={cardVariants}
@@ -287,6 +289,7 @@ export const Payments = () => {
             </CardSmall>
           </motion.div>
         </REMAINDERS>
+
         <ARTICLES>
           <CardSmall>
             <h3>Articles To Improve Your Financial Portfolio</h3>
@@ -294,8 +297,9 @@ export const Payments = () => {
           </CardSmall>
         </ARTICLES>
       </PAYMENTS>
+
       {modalContent && (
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
+         <Modal isOpen={isModalOpen} onClose={closeModal}>
           {modalContent}
         </Modal>
       )}
@@ -367,16 +371,26 @@ const PAYMENTTABS = styled.div`
   }
   @media screen and (max-width: 860px) {
     grid-area: payment-tabs;
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  gap: 1rem;
-  .payment-tabs {
-    padding: 0.75rem 1.25rem;
-    cursor: pointer;
-    span {
-      margin-left: 0.5rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 1rem;
+    .payment-tabs {
+      padding: 0.75rem 1.25rem;
+      cursor: pointer;
+      span {
+        margin-left: 0.5rem;
+      }
     }
   }
+  @media screen and (max-width: 481px) {
+    display: flex;
+    .payment-tabs {
+      width: fit-content;
+      padding: 0.6rem 1.5rem;
+      span {
+        display: none;
+      }
+    }
   }
 `;
 
@@ -430,13 +444,19 @@ const DETAILSCARDS = styled.div`
     color: var(--primary-light);
   }
   @media screen and (max-width: 860px) {
-    .card-heading > *:first-child {
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    border: 3px solid var(--primary);
-    padding: 0.75rem;
-    border-top-color: transparent;
+      .card-heading > *:first-child {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      border: 3px solid var(--primary);
+      padding: 0.75rem;
+      border-top-color: transparent;
+    }
   }
+
+  @media screen and (max-width: 480px) {
+    > div {
+      flex-direction: column;
+    }
   }
 `;
 
